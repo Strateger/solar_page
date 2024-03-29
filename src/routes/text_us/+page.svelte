@@ -11,55 +11,7 @@
 		competitive price wise
 	</h4>
 
-	<div>
-		<span class="small">1</span>
-		<span class="small">5</span>
-		<span class="small">3</span>
-		<span class="small">2</span>
-		<span class="small">3</span>
-
-		<span class="small">6</span>
-		<span class="small">9</span>
-		<span class="small">3</span>
-		<span class="big">8</span>
-		<span class="small">8</span>
-
-		<span class="big">0</span>
-		<span class="small">2</span>
-
-		<span class="big">1</span>
-		<span class="bigger" style="margin-left:2px;"> -</span>
-		<span class="small">2</span>
-
-		<span class="big">7</span>
-		<span class="small">3</span>
-
-		<span class="big">5</span>
-		<span class="small">2</span>
-
-		<span class="big">5</span>
-		<span class="small">8</span>
-		<span class="bigger" style="margin-right:5px;">-</span>
-		<span class="big">9</span>
-		<span class="small">2</span>
-
-		<span class="big">2</span>
-		<span class="small">1</span>
-
-		<span class="big">3</span>
-		<span class="small">2</span>
-
-		<span class="big">0</span>
-		<span class="small">2</span>
-		<span class="small">6</span>
-		<span class="small">5</span>
-		<span class="small">9</span>
-		<span class="small">7</span>
-		<span class="small">3</span>
-		<span class="small">2</span>
-		<span class="small">1</span>
-	</div>
-
+	<div>my phone number</div>
 	<div>
 		We are happy to help educate and point out useful resources to help you
 		on your solar journey.

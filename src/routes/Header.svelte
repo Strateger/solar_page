@@ -2,7 +2,7 @@
 	import { page } from "$app/stores";
 	import logo from "$lib/images/svelte-logo.svg";
 	import github from "$lib/images/github.svg";
-
+	let showMenu = false;
 	enum Paged {
 		Home = 1,
 		Pallets,
@@ -62,27 +62,25 @@
 			</li>
 
 			<li
-				on:mousemove={() => showElem("solar_basics")}
-				on:mouseleave={() => hideElem("solar_basics")}
+				on:mousemove={() => (showMenu = true)}
+				on:mouseleave={() => (showMenu = false)}
 			>
 				<!-- <div>Solar Basics</div> -->
 				<span class="solar_intro">Solar Intro</span>
 				<!-- svelte-ignore a11y-no-static-element-interactions -->
 				<div
-					class="sub_menu"
+					class="sub_menu menu"
+					class:visible={showMenu}
 					id="solar_basics"
-					style="display: none; position: absolute;width:200px;"
+					style="  position: absolute;width:200px;"
 					on:keypress={() => {
-						document.getElementById("solar_basics").style.display =
-							"none";
+						// document.getElementById("solar_basics").style.display =			"none";
 					}}
 					on:click={() => {
-						document.getElementById("solar_basics").style.display =
-							"none";
+						showMenu = false;
 					}}
 					on:mouseleave={() => {
-						document.getElementById("solar_basics").style.display =
-							"none";
+						//	document.getElementById("solar_basics").style.display =							"none";
 					}}
 				>
 					<a href="/basics_of_how_solar_panels_make_ac_electricity"
@@ -126,6 +124,21 @@
 </header>
 
 <style>
+	.menu {
+		/* background-color: lightblue; */
+		/* position: absolute; */
+		/* width: 100px; */
+		/* height: 50px; */
+		visibility: hidden;
+		opacity: 0;
+		transition: all 0.4s;
+		z-index: 1;
+	}
+	.menu.visible {
+		visibility: visible;
+		opacity: 1;
+	}
+
 	header {
 		display: flex;
 		justify-content: space-between;
