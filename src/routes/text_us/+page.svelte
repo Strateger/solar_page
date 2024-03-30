@@ -12,6 +12,9 @@
 	</h4>
 
 	<div>my phone number</div>
+	<button on:click={() => console.log("javascript works")}
+		>Contact us soon</button
+	>
 	<div>
 		We are happy to help educate and point out useful resources to help you
 		on your solar journey.
